@@ -4,6 +4,7 @@ from src.exception import CustomException
 from src.logger import logging  
 import pandas as pd
 
+
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
@@ -43,6 +44,7 @@ class DataIngestion:
 
         except Exception as e:
             raise CustomException(e, sys)
+        
         
 if __name__=="__main__":
     obj = DataIngestion()
